@@ -21,10 +21,16 @@ int main() {
         cerr<< e;
     }
 
-    Livro* book = new Livro();
-    book->setTitulo("Olaaaaaa");
-    
-    cout<<book->getTitulo();
+    Livro book = Livro();
+
+    vector <string> titulos;
+
+
+    book.setCapitulos()
+    book.setAnoPublicacao(2018);
+    book.setTitulo("Olaaaaaa");
+
+    cout<<book.getTitulo();
 
 
 
