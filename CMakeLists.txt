@@ -3,4 +3,4 @@ project(tp1_POO)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(tp1_POO main.cpp)
+add_executable(tp1_POO main.cpp Livro.cpp Livro.h)
