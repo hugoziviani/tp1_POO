@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include "Livro.h"
 using namespace std;
 
 
@@ -19,6 +20,11 @@ int main() {
     }catch (const char* e){
         cerr<< e;
     }
+
+    Livro* book = new Livro();
+    book->setTitulo("Olaaaaaa");
+    
+    cout<<book->getTitulo();
 
 
 
