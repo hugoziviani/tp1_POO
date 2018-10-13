@@ -5,7 +5,7 @@ using namespace std;
 
 
 int main() {
-    string DIR  = "Livros/";
+    string DIR  = "/Users/hz/CLionProjects/tp1-POO/Livros/livro";
     ifstream arqin; // ler de arquivos
     ofstream arqout; //escrever em arquivos
 
@@ -14,12 +14,9 @@ int main() {
     try {
         arqin.open(nomeArq);
         if(!arqin){
-            throw "PAU no arquivo"+to_string(i);
+            throw "PAU no arquivo";
         }
 
-
-
-        
     }catch (const char* e){
         cerr<< e;
     }
@@ -32,16 +29,9 @@ int main() {
         titulos.push_back("Capitulo " + to_string(j));
     }
 
-
-    book.setCapitulos(titulos);
-    book.setAnoPublicacao(2018);
-    book.setTitulo("Olaaaaaa");
+    titulos.clear();
 
     cout<<book;
-
-
-
-
 
 
 
