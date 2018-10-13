@@ -17,6 +17,9 @@ int main() {
             throw "PAU no arquivo"+to_string(i);
         }
 
+
+
+        
     }catch (const char* e){
         cerr<< e;
     }
