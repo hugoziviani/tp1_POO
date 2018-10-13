@@ -54,3 +54,13 @@ const vector<string> &Livro::getPalavrasChave() const {
 void Livro::setPalavrasChave(const vector<string> &palavrasChave) {
     Livro::palavrasChave = palavrasChave;
 }
+
+ostream &operator<<(ostream &os, const Livro &livro) {
+
+    for (const auto &capitulo : livro.capitulos) {
+        os << "capitulos: " << capitulo << endl;
+    }
+
+    return os;
+}
+

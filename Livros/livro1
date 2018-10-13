@@ -1,0 +1,17 @@
+● Linha 1 - tipo do livro (1 - Impresso; 2 - Eletrônico e 3 - Audiobook);
+● Linha 2 - Nome do livro;
+● Linha 3 - Escritores separados por ponto e vírgula (;);
+● LInha 4 - Ano de publicação;
+● Linha 5 - Idioma de publicação;
+● Linha 6 - ​Keywords​ separadas por ponto e vírgula (;);
+● Linha 7 - Capítulos do livro separados por ponto e vírgula (;);
+● Linha 8/9 - Depende do tipo de livro:
+○ Impresso:
+■ Livrarias onde podem ser encontrados os livros;
+■ Número de colunas do arquivo impresso.
+○ Eletrônico:
+■ URL de onde pode ser comprado;
+■ Formato do arquivo.
+○ Audiobook:
+■ Duração do áudio;
+■ Formato do áudio.

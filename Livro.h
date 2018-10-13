@@ -42,6 +42,8 @@ public:
     const vector<string> &getPalavrasChave() const;
     void setPalavrasChave(const vector<string> &palavrasChave);
 
+    friend ostream &operator<<(ostream &os, const Livro &livro);
+
 };
 
 

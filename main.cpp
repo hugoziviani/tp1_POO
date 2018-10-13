@@ -5,7 +5,7 @@ using namespace std;
 
 
 int main() {
-    string DIR  = "/Users/hz/CLionProjects/tp1-POO/cmake-build-debug/CMakeFiles/Livros/livro";
+    string DIR  = "Livros/";
     ifstream arqin; // ler de arquivos
     ofstream arqout; //escrever em arquivos
 
@@ -24,13 +24,17 @@ int main() {
     Livro book = Livro();
 
     vector <string> titulos;
+    titulos.reserve(10); // pede pra reservar
+    for (int j = 0; j < 10; ++j) {
+        titulos.push_back("Capitulo " + to_string(j));
+    }
 
 
-    book.setCapitulos()
+    book.setCapitulos(titulos);
     book.setAnoPublicacao(2018);
     book.setTitulo("Olaaaaaa");
 
-    cout<<book.getTitulo();
+    cout<<book;
 
 
 
